@@ -1,0 +1,97 @@
+*,::after,::before {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* layout */
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+.col {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.gap-s {
+    gap: 16px;
+}
+
+.gap-m {
+    gap: 24px;
+}
+
+.gap-l {
+    gap: 32px;
+}
+
+
+/* typo */
+h1 {
+    margin: 0;
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+/* btn */
+.btn-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 24px;
+}
+
+.coffee-select {
+    font-size: 2.4rem;
+    font-weight: 500;
+    background-color: white;
+    border: 2px solid rgb(179, 179, 179);
+    color: rgb(179, 179, 179);
+    border-radius: 14px;
+    padding: 16px;
+}
+/* 
+.coffee-select:hover {
+    border: 2px solid rgb(152, 152, 152);
+    color: rgb(152, 152, 152);
+} */
+
+.coffee-active-btn {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* 체크박스 */
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    vertical-align: middle;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+input[type="checkbox"] + label :before{
+    vertical-align: middle;
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    margin-right: 8px;
+}
+
+input[type="checkbox"]:checked + label :before{
+    content: "";
+    background-color: black;
+    border: 1px solid black;
+}
