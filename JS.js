@@ -3,9 +3,7 @@ const coffeeSelectBtns = document.querySelectorAll('.coffee-select');
 
 coffeeSelectBtns.forEach(btn => {
     btn.addEventListener('click', ()=>{
-        coffeeSelectBtns.forEach(btn => {
-            btn.classList.remove("coffee-active-btn");
-        })
+        coffeeSelectBtns.forEach(btn => {btn.classList.remove("coffee-active-btn");})
         btn.classList.add("coffee-active-btn")
     })
 })
@@ -25,9 +23,9 @@ function checkSelectAll() {
 }
 
 function selectAll(selectAll) {
-    const option = document.getElementsByName("option");
+    const option = document.getElementsByName('option');
 
     option.forEach(checkbox => {
-        checkbox.checked = selectAll.checked
-    });
+        checkbox.checked = selectAll.checked;
+    })
 }

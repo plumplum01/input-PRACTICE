@@ -69,6 +69,15 @@ h1 {
 }
 
 /* 체크박스 */
+.check-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 24px;
+}
+
 input[type="checkbox"] {
     display: none;
 }
@@ -94,4 +103,21 @@ input[type="checkbox"]:checked + label :before{
     content: "";
     background-color: black;
     border: 1px solid black;
+}
+
+
+/* 할인쿠폰 */
+.coupon-select {
+    font-size: 2rem;
+    padding: 16px;
+    border: 1px solid orange;
+    width: 400px; 
+}
+
+.coupon-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }

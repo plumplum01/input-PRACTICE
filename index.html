@@ -15,33 +15,44 @@
             <input type="button" class="coffee-select" value="따뜻한 아메리카노">
         </div>
     </section>
-    <section check-wrapper>
+    <section class="check-wrapper">
         <h1>추가할 옵션을 골라주세요</h1>
-        <div>
-            <input type="checkbox" name="select-all" id="All" onclick="selectAll(this)">
-            <label for="All">
-                <span style="font-size: 2rem; font-weight: 500;">전체 선택</span>
-            </label>
-        </div>
-        <div>
-            <input type="checkbox" name="option" id="syrup" onclick="checkSelectAll()">
-            <label for="syrup">
-                <span>+ 시럽 추가</span>
-            </label>
-        </div>
-        <div>
-            <input type="checkbox" name="option" id="light" onclick="checkSelectAll()">
-            <label for="light">
-                <span>+ 연하게</span>
-            </label>
-        </div>
-        <div>
-            <input type="checkbox" name="option" id="ice" onclick="checkSelectAll()">
-            <label for="ice">
-                <span>+ 얼음 추가</span>
-            </label>
+        <div class="col">
+            <div>
+                <input type="checkbox" name="select-all" id="All" onclick="selectAll(this)">
+                <label for="All">
+                    <span style="font-size: 2rem; font-weight: 500;">전체 선택</span>
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" name="option" id="syrup" onclick="checkSelectAll()">
+                <label for="syrup">
+                    <span>+ 시럽 추가</span>
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" name="option" id="light" onclick="checkSelectAll()">
+                <label for="light">
+                    <span>+ 연하게</span>
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" name="option" id="ice" onclick="checkSelectAll()">
+                <label for="ice">
+                    <span>+ 얼음 추가</span>
+                </label>
+            </div>
         </div>
     </section>
+    <div class="coupon-wrapper">
+        <h1>할인 쿠폰을 선택하세요</h1>
+        <select name="coupon" class="coupon-select" id="">
+            <option value="---">선택하세요</option>
+            <option value="15% 첫방문 할인" checked>15% 첫방문 할인</option>
+            <option value="15% 첫방문 할인">4% 사이렌오더 할인</option>
+            <option value="15% 첫방문 할인">5% 생일쿠폰 할인</option>
+        </select>
+    </div>
 </body>
 <script src="./JS.js"></script>
 </html>
