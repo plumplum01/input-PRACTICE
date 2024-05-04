@@ -44,7 +44,7 @@
             </div>
         </div>
     </section>
-    <div class="coupon-wrapper">
+    <section class="coupon-wrapper">
         <h1>할인 쿠폰을 선택하세요</h1>
         <select name="coupon" class="coupon-select" id="">
             <option value="---">선택하세요</option>
@@ -52,7 +52,24 @@
             <option value="15% 첫방문 할인">4% 사이렌오더 할인</option>
             <option value="15% 첫방문 할인">5% 생일쿠폰 할인</option>
         </select>
-    </div>
+    </section>
+    <section class="pay-wrapper">
+        <h1>결제수단 선택</h1>
+        <div class="btn-grid">
+            <input type="button" class="pay-how" value="신용카드">
+            <input type="button" class="pay-how" value="카카오페이">
+            <input type="button" class="pay-how" value="네이버페이">
+            <input type="button" class="pay-how" value="토스페이">
+        </div>
+        <div class="pay-modal-container">
+            <div class="pay-modal">
+                <h1>결제 진행</h1>
+                <img style="width: 200px;" src="./img/qr_code.jpeg" alt="">
+                <span>앱으로 결제를 진행해주세요</span>
+                <button class="pay-close">완료</button>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="./JS.js"></script>
 </html>

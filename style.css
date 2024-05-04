@@ -5,6 +5,9 @@
 
 body {
     margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 32px;
 }
 
 /* layout */
@@ -120,4 +123,76 @@ input[type="checkbox"]:checked + label :before{
     justify-content: center;
     align-items: center;
     gap: 16px;
+}
+
+/* 결제수단 */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    font-size: 3rem;
+}
+
+.pay-how {
+    font-size: 2.4rem;
+    font-weight: 500;
+    background-color: white;
+    border: 2px solid rgb(179, 179, 179);
+    color: rgb(179, 179, 179);
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.pay-active-btn {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.pay-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.pay-modal-container {
+    display: none;
+    background-color: rgb(0,0,0,0.4);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+.pay-modal {
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items:center;
+    gap: 64px;
+    padding: 32px;
+    width: 600px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.pay-modal > span {
+    font-size: 1.8rem;
+}
+
+.pay-close {
+    font-size: 1.6rem;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 16px;
+    width: 80px;
+    cursor: pointer;
 }
