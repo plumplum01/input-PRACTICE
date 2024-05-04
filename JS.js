@@ -42,7 +42,9 @@ payHow.forEach(btn => {
         btn.classList.add("pay-active-btn");
 
         const payContainer = document.querySelector(".pay-modal-container");
+        const body = document.querySelector("body");
         payContainer.style.display = "flex";
+        body.style.overflow = "hidden";
     })
 })
 
@@ -50,4 +52,7 @@ const payClose = document.querySelector('.pay-close');
 payClose.addEventListener('click', () => {
     const payContainer = document.querySelector(".pay-modal-container");
     payContainer.style.display = "none";
+
+    const body = document.querySelector("body");
+    body.style.overflow = "scroll";
 })
