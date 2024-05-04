@@ -8,6 +8,8 @@ coffeeSelectBtns.forEach(btn => {
     })
 })
 
+
+
 // 체크박스
 function checkSelectAll() {
     const option = document.querySelectorAll('input[name="option"]');
@@ -43,6 +45,7 @@ payHow.forEach(btn => {
 
         const payContainer = document.querySelector(".pay-modal-container");
         const body = document.querySelector("body");
+        
         payContainer.style.display = "flex";
         body.style.overflow = "hidden";
     })
